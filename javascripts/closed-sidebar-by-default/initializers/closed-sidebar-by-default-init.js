@@ -9,7 +9,7 @@ export default {
        applicationController.set("showSidebar", false);
       api.onPageChange((url, title) => {
         const router = api.container.lookup('service:router');
-        console.log(router.currentRouteName);
+        //console.log(router.currentRouteName);
 
         if (router.currentRoute.name === 'discovery.top') {
          applicationController.set("showSidebar", false);
