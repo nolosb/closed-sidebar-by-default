@@ -11,7 +11,7 @@ export default {
         const router = api.container.lookup('service:router');
         console.log(router.currentRouteName);
 
-        if (router.currentRoute.name === 'discovery.categories') {
+        if (router.currentRoute.name === 'discovery.top') {
          applicationController.set("showSidebar", false);
        }
         else {
