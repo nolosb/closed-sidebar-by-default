@@ -6,17 +6,17 @@ export default {
   initialize() {
     withPluginApi("0.8", (api) => {
       const applicationController = api.container.lookup("controller:application");
-       applicationController.set("showSidebar", false);
+      applicationController.set("showSidebar", false);
       api.onPageChange((url, title) => {
         const router = api.container.lookup('service:router');
-        console.log(router.currentRouteName);
+        // console.log(router.currentRouteName);
 
         if (router.currentRoute.name === 'discovery.categories') {
-         applicationController.set("showSidebar", false);
-       }
+          applicationController.set("showSidebar", false);
+        }
         else {
-         applicationController.set("showSidebar", true);
-       }
+          applicationController.set("showSidebar", true);
+        }
       });
 
     });
