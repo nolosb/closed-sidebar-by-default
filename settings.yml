@@ -1,0 +1,8 @@
+landing_route:
+  default: 'discovery.categories'
+  type: 'enum'
+  choices:
+    - 'discovery.categories'
+    - 'discovery.latest'
+    - 'discovery.top'
+  description: 'Route of the landing page'
